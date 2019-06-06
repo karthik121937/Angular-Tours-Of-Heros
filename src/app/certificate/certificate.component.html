@@ -3,12 +3,13 @@
     <div class="card">
       <div class="card-content white-text">
         <div class="row">
-          <div class="col s5" id = "contentToConvert">
+          <div class="col s5" id="contentToConvert">
             <form #employeeForm="ngForm" (ngSubmit)="onSubmit(employeeForm)">
               <!-- <input type="hidden" name="_id" #_id="ngModel" [(ngModel)]="employee._id"> -->
               <div class="row">
                 <div class="input-field col s12">
-                  <input type="text" name="name" #name="ngModel" [(ngModel)]="employee.name" placeholder="Enter full name" required>
+                  <input type="text" name="name" #name="ngModel" [(ngModel)]="employee.name"
+                    placeholder="Enter full name" required>
                   <label>Name :
                     <label class="red-text">*</label>
                   </label>
@@ -16,19 +17,22 @@
               </div>
               <div class="row">
                 <div class="input-field col s12">
-                  <input type="text" name="position" #name="ngModel" [(ngModel)]="employee.position" placeholder="Eg : Snr. Developer">
+                  <input type="text" name="position" #name="ngModel" [(ngModel)]="employee.position"
+                    placeholder="Eg : Snr. Developer">
                   <label>Position :</label>
                 </div>
               </div>
               <div class="row">
                 <div class="input-field col s12">
-                  <input type="text" name="office" #name="ngModel" [(ngModel)]="employee.office" placeholder="Enter office location">
+                  <input type="text" name="office" #name="ngModel" [(ngModel)]="employee.office"
+                    placeholder="Enter office location">
                   <label>Office :</label>
                 </div>
               </div>
               <div class="row">
                 <div class="input-field col s12">
-                  <input type="text" name="salary" #name="ngModel" [(ngModel)]="employee.salary" placeholder="Salary per annum">
+                  <input type="text" name="salary" #name="ngModel" [(ngModel)]="employee.salary"
+                    placeholder="Salary per annum">
                   <label>Salary :</label>
                 </div>
               </div>
@@ -46,5 +50,5 @@
 
 </div>
 <div>
-  <input type="button" value="CPTURE" (click)="captureScreen()"/>
+  <input type="button" value="CPTURE" (click)="captureScreen()" />
 </div>
